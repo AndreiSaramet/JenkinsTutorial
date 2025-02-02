@@ -1,8 +1,8 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent any
+    agent { docker { image 'maven:3.9.9-eclipse-temurin-21-alpine' } }
     environment {
-        PATH = "/Library/Frameworks/Python.framework/Versions/3.12/bin:$PATH"
+        PATH = "/usr/local/bin:$PATH"
     }
     stages {
         stage('build') {
