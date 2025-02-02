@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python3.12 --version'
+                sh 'ps -ef'
             }
         }
     }
