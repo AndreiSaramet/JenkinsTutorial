@@ -7,7 +7,6 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo $PATH'
                 sh 'python3.12 --version'
             }
         }
