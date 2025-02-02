@@ -2,7 +2,7 @@
 pipeline {
     agent any
     environment {
-        PATH = "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12:$PATH"
+        PATH = "/Library/Frameworks/Python.framework/Versions/3.12/bin:$PATH"
     }
     stages {
         stage('build') {
