@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'whoami'
-                sh 'ps'
+                sh 'gcc'
                 sh 'whereis python3.12'
             }
         }
