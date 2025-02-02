@@ -4,7 +4,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'ps -ef'
+                sh 'pwd'
+                sh 'whoami'
+                sh 'ps'
+                sh 'whereis python3.12'
             }
         }
     }
