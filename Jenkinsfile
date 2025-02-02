@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'ps -ef'
+                sh 'pwd'
+                sh 'whoami'
+                sh 'ps'
             }
         }
     }
