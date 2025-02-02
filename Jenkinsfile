@@ -1,7 +1,7 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
+    agent any
     stages {
-        agent any
         stage('build') {
             steps {
                 sh 'python --version'
